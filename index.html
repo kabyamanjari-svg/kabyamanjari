@@ -6,19 +6,36 @@
 
 <title>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</title>
 
+logo.png
+
 <style>
+
 body{
     font-family: Georgia, serif;
     margin:0;
-    background:#f8f5f0;
-    color:#333;
+    background:#f7faff;
+    color:#1d2945;
 }
 
+/* Header */
 header{
-    background:#6b4632;
+    background:linear-gradient(
+        135deg,
+        #0057D9,
+        #003C99
+    );
     color:white;
     text-align:center;
-    padding:40px 20px;
+    padding:60px 20px;
+}
+
+.logo{
+    width:180px;
+    height:auto;
+    margin-bottom:20px;
+    filter:drop-shadow(
+        0 0 12px rgba(255,255,255,0.3)
+    );
 }
 
 h1{
@@ -32,50 +49,78 @@ h1{
     padding:30px;
 }
 
+/* Language Switch */
 .language-switch{
     text-align:right;
     margin-bottom:30px;
 }
 
 button{
-    background:#99633d;
+    background:#0057D9;
     color:white;
     border:none;
     padding:10px 20px;
     margin-left:10px;
     border-radius:6px;
     cursor:pointer;
+    font-size:15px;
 }
 
 button:hover{
-    background:#7d4f30;
+    background:#003C99;
 }
 
+/* Cards */
 .card{
     background:white;
-    padding:25px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
 h2{
-    color:#6b4632;
+    color:#0057D9;
 }
 
+/* Footer */
 footer{
     text-align:center;
-    padding:20px;
-    background:#eee;
+    padding:25px;
+    background:#003C99;
+    color:white;
 }
-</style>
 
+@media(max-width:768px){
+
+    h1{
+        font-size:36px;
+    }
+
+    .logo{
+        width:130px;
+    }
+
+    .language-switch{
+        text-align:center;
+    }
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
+
+    logo.png
+
     <h1>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</h1>
-    <p id="tagline">Where words bloom into poetry</p>
+
+    <p id="tagline">
+        Where words bloom into poetry
+    </p>
+
 </header>
 
 <div class="container">
@@ -88,21 +133,24 @@ footer{
     <div class="card">
         <h2 id="welcomeTitle">Welcome</h2>
         <p id="welcomeText">
-            Welcome to Kabyamanjari. A collection of poetry, stories, literature and creative thoughts.
+            Welcome to Kabyamanjari. A collection of poetry,
+            stories, literature and creative thoughts.
         </p>
     </div>
 
     <div class="card">
         <h2 id="aboutTitle">About</h2>
         <p id="aboutText">
-            Kabyamanjari is a platform to share literary works, poems and stories.
+            Kabyamanjari is a platform to share literary works,
+            poems and stories.
         </p>
     </div>
 
     <div class="card">
         <h2 id="poemTitle">Latest Poem</h2>
         <p id="poemText">
-            Every raindrop carries memories and every memory becomes a poem.
+            Every raindrop carries memories and every memory
+            becomes a poem.
         </p>
     </div>
 
