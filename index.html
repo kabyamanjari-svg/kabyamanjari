@@ -1,234 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</title>
-
-<link rel="icon" type="image/png" href="logo.png">
-
-<style>
-
-body{
-    font-family: Georgia, serif;
-    margin:0;
-    background:#f7faff;
-    color:#1d2945;
-}
-
-/* Header */
-header{
-    background:linear-gradient(135deg,#0057D9,#003C99);
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-}
-
-
-.logo{
-    width:100px;
-    height:auto;
-    margin-bottom:15px;
-
-    background:white;
-    padding:10px;
-    border-radius:50%;
-
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-}
-
-
-h1{
-    font-size:42px;
-    margin:10px 0;
-}
-``
-
-.container {
-  width: 50%;
-}
-
-.language-switch{
-    text-align:right;
-    margin-bottom:30px;
-}
-
-button{
-    background:#0057D9;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    margin-left:10px;
-    border-radius:6px;
-    cursor:pointer;
-    font-size:15px;
-}
-
-button:hover{
-    background:#003C99;
-}
-
-
-.card {
-  background: #f8f9fb;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-
-h2{
-    color:#0057D9;
-}
-
-footer{
-    text-align:center;
-    padding:25px;
-    background:#003C99;
-    color:white;
-}
-
-@media(max-width:768px){
-
-    h1{
-        font-size:34px;
-    }
-
-    .logo{
-        width:150px;
-    }
-
-    .language-switch{
-        text-align:center;
-    }
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<header>
-
-    <img src="logo.png" class="logo">
-
-    <h1>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</h1>
-
-    <p id="tagline">
-        Where words bloom into poetry
-    </p>
-
-</header>
-``
-
-<div class="container">
-
-    <div class="language-switch">
-        <button onclick="switchToEnglish()">English</button>
-        <button onclick="switchToOdia()">ଓଡ଼ିଆ</button>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <img src="logo.png" alt="Kabyamanjari logo" class="brand-logo">
+        <div class="brand-text">
+          <h1 data-i18n="brandTitle">Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</h1>
+          <p data-i18n="brandTag">A home for poetry, stories, and literary reflections</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active" data-i18n="navHome">Home</a>
+        <a href="welcome.html" data-i18n="navWelcome">Welcome</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <a href="poem.html" data-i18n="navPoem">Latest Poem</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="en" data-i18n="btnEnglish">English</button>
+        <button class="lang-btn" data-lang="od" data-i18n="btnOdia">ଓଡ଼ିଆ</button>
+      </div>
     </div>
+  </header>
 
-    <div class="card">
-        <h2 id="welcomeTitle">Welcome</h2>
-        <p id="welcomeText">
-            Welcome to Kabyamanjari. A collection of poetry,
-            stories, literature and creative thoughts.
-        </p>
+  <main>
+    <section class="hero">
+      <div class="container hero-box">
+        <div>
+          <h2 data-i18n="heroTitle">Where words bloom into poetry</h2>
+          <p data-i18n="heroText">Discover poems, short reflections, and literary thoughts in a calm, elegant reading space.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="poem.html" data-i18n="heroBtn1">Read Latest Poem</a>
+            <a class="btn btn-outline" href="about.html" data-i18n="heroBtn2">Know More</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="quote" data-i18n="heroQuote">Every memory becomes a poem when the heart remembers softly.</p>
+          <div class="meta" data-i18n="heroMeta">Featured thought • Literature • Reflection</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h3 data-i18n="sectionTitle">Explore Kabyamanjari</h3>
+            <p data-i18n="sectionText">A simple literary space designed like a modern blog.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h4 data-i18n="card1Title">Welcome</h4>
+            <p data-i18n="card1Text">Begin your reading journey with a warm introduction to the site and its purpose.</p>
+            <a class="card-link" href="welcome.html" data-i18n="readMore">Read more →</a>
+          </article>
+          <article class="card">
+            <h4 data-i18n="card2Title">About</h4>
+            <p data-i18n="card2Text">Learn about Kabyamanjari and the vision behind poems, stories, and literary writing.</p>
+            <a class="card-link" href="about.html" data-i18n="readMore">Read more →</a>
+          </article>
+          <article class="card">
+            <h4 data-i18n="card3Title">Latest Poem</h4>
+            <p data-i18n="card3Text">Read a featured poem presented in a calm and distraction-free layout.</p>
+            <a class="card-link" href="poem.html" data-i18n="readMore">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid" style="grid-template-columns: 2fr 1fr;">
+          <div class="card">
+            <h4 data-i18n="aboutHeading">What Kabyamanjari stands for</h4>
+            <p data-i18n="aboutBody1">Kabyamanjari is a platform to share poems, stories, personal reflections, and literary ideas in both English and Odia.</p>
+            <p data-i18n="aboutBody2">This updated design uses a full-width responsive container, balanced spacing, a clean navigation menu, and modern cards to make the site feel professional and welcoming.</p>
+          </div>
+          <div class="card">
+            <h4 data-i18n="card4Title">Contact</h4>
+            <p data-i18n="card4Text">Share your feedback, literary thoughts, or publishing queries.</p>
+            <a class="card-link" href="contact.html" data-i18n="readMore">Read more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Kabyamanjari</strong>
+        <div class="footer-note" data-i18n="footerText">© 2026 Kabyamanjari. Crafted for readers who love literature.</div>
+      </div>
+      <div class="footer-note">Blue literary theme • Responsive design</div>
     </div>
+  </footer>
 
-    <div class="card">
-        <h2 id="aboutTitle">About</h2>
-        <p id="aboutText">
-            Kabyamanjari is a platform to share literary works,
-            poems and stories.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2 id="poemTitle">Latest Poem</h2>
-        <p id="poemText">
-            Every raindrop carries memories and every memory
-            becomes a poem.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2 id="contactTitle">Contact</h2>
-        <p id="contactText">
-            Email: your@email.com
-        </p>
-    </div>
-
-</div>
-
-<footer>
-    © 2026 Kabyamanjari
-</footer>
-
-<script>
-
-function switchToOdia(){
-
-document.getElementById("tagline").innerHTML =
-"ଶବ୍ଦର ସୁଗନ୍ଧରେ ମନର ଅଭିବ୍ୟକ୍ତି";
-
-document.getElementById("welcomeTitle").innerHTML =
-"ସ୍ୱାଗତ";
-
-document.getElementById("welcomeText").innerHTML =
-"କାବ୍ୟମଞ୍ଜରୀକୁ ଆପଣଙ୍କର ହାର୍ଦ୍ଦିକ ସ୍ୱାଗତ। ଏହା କବିତା, ଗଳ୍ପ, ସାହିତ୍ୟ ଓ ସୃଜନଶୀଳ ଚିନ୍ତାଧାରାର ଏକ ସୁନ୍ଦର ସଂଗ୍ରହ।";
-
-document.getElementById("aboutTitle").innerHTML =
-"ମୋ ବିଷୟରେ";
-
-document.getElementById("aboutText").innerHTML =
-"କାବ୍ୟମଞ୍ଜରୀ ହେଉଛି କବିତା, ଗଳ୍ପ ଏବଂ ସାହିତ୍ୟିକ ଲେଖା ପ୍ରକାଶ ପାଇଁ ଏକ ମଞ୍ଚ।";
-
-document.getElementById("poemTitle").innerHTML =
-"ନବୀନତମ କବିତା";
-
-document.getElementById("poemText").innerHTML =
-"ପ୍ରତ୍ୟେକ ବର୍ଷା ବୁନ୍ଦରେ ରହିଥାଏ ସ୍ମୃତି ଓ ପ୍ରତ୍ୟେକ ସ୍ମୃତି ଏକ କବିତାର ରୂପ ନେଇଥାଏ।";
-
-document.getElementById("contactTitle").innerHTML =
-"ଯୋଗାଯୋଗ";
-
-document.getElementById("contactText").innerHTML =
-"ଇ-ମେଲ୍: your@email.com";
-}
-
-function switchToEnglish(){
-
-document.getElementById("tagline").innerHTML =
-"Where words bloom into poetry";
-
-document.getElementById("welcomeTitle").innerHTML =
-"Welcome";
-
-document.getElementById("welcomeText").innerHTML =
-"Welcome to Kabyamanjari. A collection of poetry, stories, literature and creative thoughts.";
-
-document.getElementById("aboutTitle").innerHTML =
-"About";
-
-document.getElementById("aboutText").innerHTML =
-"Kabyamanjari is a platform to share literary works, poems and stories.";
-
-document.getElementById("poemTitle").innerHTML =
-"Latest Poem";
-
-document.getElementById("poemText").innerHTML =
-"Every raindrop carries memories and every memory becomes a poem.";
-
-document.getElementById("contactTitle").innerHTML =
-"Contact";
-
-document.getElementById("contactText").innerHTML =
-"Email: your@email.com";
-}
-
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
