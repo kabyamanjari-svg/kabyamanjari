@@ -1,33 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kabyamanjari</title>
-    <style>
-        body{
-            font-family: Georgia, serif;
-            max-width:900px;
-            margin:auto;
-            padding:40px;
-            line-height:1.8;
-        }
-        h1{
-            text-align:center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background:#f8f5f0;
+    color:#333;
+    line-height:1.8;
+}
+
+header{
+    background:#5c3d2e;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.language-switch{
+    text-align:right;
+    margin-bottom:20px;
+}
+
+button{
+    padding:10px 18px;
+    border:none;
+    background:#8b5e3c;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    margin-left:10px;
+}
+
+button:hover{
+    background:#6d472c;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#5c3d2e;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#eee;
+    margin-top:40px;
+}
+
+.hidden{
+    display:none;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Kabyamanjari</h1>
+<header>
+    <h1>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</h1>
+    <p id="tagline">
+        Where words bloom into poetry
+    </p>
+</header>
 
-<p>Welcome to Kabyamanjari.</p>
+<div class="container">
 
-<p>A collection of poetry, stories, literature and creative thoughts.</p>
+    <div class="language-switch">
+        <button onclick="showEnglish()">English</button>
+        <button onclick="showOdia()">ଓଡ଼ିଆ</button>
+    </div>
 
-<h2>About</h2>
+    <!-- ENGLISH -->
+    <div id="english">
 
-<p>
-This website showcases original literary works and writings.
-</p>
-
-</body>
-</html>
