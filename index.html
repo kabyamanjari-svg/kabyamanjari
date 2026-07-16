@@ -1,98 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="or">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</title>
+  <meta name="description" content="କାବ୍ୟମଞ୍ଜରୀ — କବିତା, ଗଳ୍ପ ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରା ପାଇଁ ଏକ ସୁନ୍ଦର ଓଡ଼ିଆ ସାହିତ୍ୟ ଆସର।">
+
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container navbar">
-      <div class="brand">
-        <img src="logo.png" alt="Kabyamanjari logo" class="brand-logo">
+
+      <a class="brand" href="index.html" aria-label="Kabyamanjari home">
+        <img src="logo.png">
+
         <div class="brand-text">
-  <h1 class="site-title-en">Kabyamanjari</h1>
-  <div class="site-title-od">କାବ୍ୟମଞ୍ଜରୀ</div>
-  <p data-i18n="brandTag">
-    କବିତା, ଗଳ୍ପ ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରାର ଏକ ସୁନ୍ଦର ଆସର
-  </p>
-</div>
-      </div>
-      <nav class="nav-links">
-        <a href="index.html" class="active" data-i18n="navHome">Home</a>
-        <a href="welcome.html" data-i18n="navWelcome">Welcome</a>
-        <a href="about.html" data-i18n="navAbout">About</a>
-        <a href="poem.html" data-i18n="navPoem">Latest Poem</a>
-        <a href="contact.html" data-i18n="navContact">Contact</a>
+          <h1 class="site-title-en">Kabyamanjari</h1>
+          <div class="site-title-od">କାବ୍ୟମଞ୍ଜରୀ</div>
+          <p data-i18n="brandTag">
+            କବିତା, ଗଳ୍ପ ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରାର ଏକ ସୁନ୍ଦର ଆସର
+          </p>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="active" data-i18n="navHome">ମୂଳପୃଷ୍ଠା</a>
+        <a href="welcome.html" data-i18n="navWelcome">ସ୍ୱାଗତ</a>
+        <a href="about.html" data-i18n="navAbout">ପରିଚୟ</a>
+        <a href="poem.html" data-i18n="navPoem">ନବୀନତମ କବିତା</a>
+        <a href="contact.html" data-i18n="navContact">ଯୋଗାଯୋଗ</a>
       </nav>
-      <div class="lang-switch">
-        <button class="lang-btn" data-lang="en" data-i18n="btnEnglish">English</button>
-        <button class="lang-btn" data-lang="od" data-i18n="btnOdia">ଓଡ଼ିଆ</button>
+
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn" type="button" data-lang="en" data-i18n="btnEnglish">English</button>
+        <button class="lang-btn active" type="button" data-lang="od" data-i18n="btnOdia">ଓଡ଼ିଆ</button>
       </div>
+
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-box">
-        <div>
-          <h2 data-i18n="heroTitle">Where words bloom into poetry</h2>
-          <p data-i18n="heroText">Discover poems, short reflections, and literary thoughts in a calm, elegant reading space.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="poem.html" data-i18n="heroBtn1">Read Latest Poem</a>
-            <a class="btn btn-outline" href="about.html" data-i18n="heroBtn2">Know More</a>
+      <div class="container">
+        <div class="hero-box">
+
+          <div class="hero-content">
+            <span class="eyebrow">ଓଡ଼ିଆ ସାହିତ୍ୟର ସୁନ୍ଦର ଆସର</span>
+
+            <h2 data-i18n="heroTitle">
+              ଶବ୍ଦର ସୁଗନ୍ଧରେ ମନର ଅଭିବ୍ୟକ୍ତି
+            </h2>
+
+            <p data-i18n="heroText">
+              କବିତା, ଗଳ୍ପ ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରାକୁ ସୁନ୍ଦର ଓ ଶାନ୍ତ ପାଠନ ଅନୁଭୂତିରେ ଖୋଜନ୍ତୁ।
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="poem.html" data-i18n="heroBtn1">
+                ନବୀନତମ କବିତା ପଢନ୍ତୁ
+              </a>
+              <a class="btn btn-outline" href="about.html" data-i18n="heroBtn2">
+                ଅଧିକ ଜାଣନ୍ତୁ
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="hero-card">
-          <p class="quote" data-i18n="heroQuote">Every memory becomes a poem when the heart remembers softly.</p>
-          <div class="meta" data-i18n="heroMeta">Featured thought • Literature • Reflection</div>
+
+          <aside class="hero-card" aria-label="Featured thought">
+            <p class="quote" data-i18n="heroQuote">
+              ପ୍ରତ୍ୟେକ ସ୍ମୃତି ହୃଦୟରେ ଧ୍ୱନି ହେଲେ ଏକ ଦିନ କବିତା ହୋଇଯାଏ।
+            </p>
+            <div class="meta" data-i18n="heroMeta">
+              ବିଶେଷ ଚିନ୍ତନ • ସାହିତ୍ୟ • ଅନୁଭୂତି
+            </div>
+          </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section explore-section">
       <div class="container">
         <div class="section-head">
           <div>
-            <h3 data-i18n="sectionTitle">Explore Kabyamanjari</h3>
-            <p data-i18n="sectionText">A simple literary space designed like a modern blog.</p>
+            <span class="section-kicker">Explore</span>
+            <h3 data-i18n="sectionTitle">କାବ୍ୟମଞ୍ଜରୀକୁ ଅନୁସନ୍ଧାନ କରନ୍ତୁ</h3>
+            <p data-i18n="sectionText">
+              ଆଧୁନିକ ରୂପ, ସରଳ ପାଠନ ଅନୁଭୂତି ଓ ସାହିତ୍ୟର ମଧୁର ସ୍ପର୍ଶ।
+            </p>
           </div>
         </div>
-        <div class="grid">
-          <article class="card">
-            <h4 data-i18n="card1Title">Welcome</h4>
-            <p data-i18n="card1Text">Begin your reading journey with a warm introduction to the site and its purpose.</p>
-            <a class="card-link" href="welcome.html" data-i18n="readMore">Read more →</a>
+
+        <div class="grid feature-grid">
+          <article class="card feature-card">
+            <div class="card-icon">୧</div>
+            <h4 data-i18n="card1Title">ସ୍ୱାଗତ</h4>
+            <p data-i18n="card1Text">
+              ଏହି ସାହିତ୍ୟିକ ଆସରର ଉଦ୍ଦେଶ୍ୟ ଓ ଆରମ୍ଭ ବିଷୟରେ ଜାଣନ୍ତୁ।
+            </p>
+            <a class="card-link" href="welcome.html" data-i18n="readMore">ଅଧିକ ପଢନ୍ତୁ →</a>
           </article>
-          <article class="card">
-            <h4 data-i18n="card2Title">About</h4>
-            <p data-i18n="card2Text">Learn about Kabyamanjari and the vision behind poems, stories, and literary writing.</p>
-            <a class="card-link" href="about.html" data-i18n="readMore">Read more →</a>
+
+          <article class="card feature-card">
+            <div class="card-icon">୨</div>
+            <h4 data-i18n="card2Title">ପରିଚୟ</h4>
+            <p data-i18n="card2Text">
+              କାବ୍ୟମଞ୍ଜରୀର ଭାବନା, ଦୃଷ୍ଟିକୋଣ ଓ ସାହିତ୍ୟିକ ଯାତ୍ରାକୁ ଜାଣନ୍ତୁ।
+            </p>
+            <a class="card-link" href="about.html" data-i18n="readMore">ଅଧିକ ପଢନ୍ତୁ →</a>
           </article>
-          <article class="card">
-            <h4 data-i18n="card3Title">Latest Poem</h4>
-            <p data-i18n="card3Text">Read a featured poem presented in a calm and distraction-free layout.</p>
-            <a class="card-link" href="poem.html" data-i18n="readMore">Read more →</a>
+
+          <article class="card feature-card">
+            <div class="card-icon">୩</div>
+            <h4 data-i18n="card3Title">ନବୀନତମ କବିତା</h4>
+            <p data-i18n="card3Text">
+              ଶାନ୍ତ, ସୁନ୍ଦର ଓ distraction-free layout ରେ ନବୀନତମ କବିତା ପଢନ୍ତୁ।
+            </p>
+            <a class="card-link" href="poem.html" data-i18n="readMore">ଅଧିକ ପଢନ୍ତୁ →</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section about-preview-section">
       <div class="container">
-        <div class="grid" style="grid-template-columns: 2fr 1fr;">
-          <div class="card">
-            <h4 data-i18n="aboutHeading">What Kabyamanjari stands for</h4>
-            <p data-i18n="aboutBody1">Kabyamanjari is a platform to share poems, stories, personal reflections, and literary ideas in both English and Odia.</p>
-            <p data-i18n="aboutBody2">This updated design uses a full-width responsive container, balanced spacing, a clean navigation menu, and modern cards to make the site feel professional and welcoming.</p>
-          </div>
-          <div class="card">
-            <h4 data-i18n="card4Title">Contact</h4>
-            <p data-i18n="card4Text">Share your feedback, literary thoughts, or publishing queries.</p>
-            <a class="card-link" href="contact.html" data-i18n="readMore">Read more →</a>
-          </div>
+        <div class="split-grid">
+
+          <article class="card large-card">
+            <span class="section-kicker">About Kabyamanjari</span>
+            <h4 data-i18n="aboutHeading">କାବ୍ୟମଞ୍ଜରୀର ଲକ୍ଷ୍ୟ</h4>
+
+            <p data-i18n="aboutBody1">
+              କାବ୍ୟମଞ୍ଜରୀ ହେଉଛି କବିତା, ଗଳ୍ପ, ବ୍ୟକ୍ତିଗତ ଅନୁଭୂତି ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରାକୁ ଏକ ସୁନ୍ଦର ମଞ୍ଚରେ ଆଣିବାର ଏକ ପ୍ରୟାସ।
+            </p>
+
+            <p data-i18n="aboutBody2">
+              ଏହି ଡିଜାଇନ୍ ପାଠକଙ୍କୁ ସ୍ପଷ୍ଟ ନାଭିଗେସନ୍, ସୁନ୍ଦର spacing, professional cards ଓ mobile-friendly layout ଦେବା ପାଇଁ ପ୍ରସ୍ତୁତ।
+            </p>
+
+            <a class="text-btn" href="about.html">କାବ୍ୟମଞ୍ଜରୀ ବିଷୟରେ ଅଧିକ ଜାଣନ୍ତୁ →</a>
+          </article>
+
+          <aside class="card contact-card">
+            <span class="section-kicker">Connect</span>
+            <h4 data-i18n="card4Title">ଯୋଗାଯୋଗ</h4>
+            <p data-i18n="card4Text">
+              ଆପଣଙ୍କର ମତାମତ, ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରା କିମ୍ବା ପ୍ରକାଶନ ସମ୍ପର୍କିତ ପ୍ରଶ୍ନ ଆମ ସହିତ ସେୟାର କରନ୍ତୁ।
+            </p>
+            <a class="btn btn-secondary" href="contact.html" data-i18n="readMore">
+              ଯୋଗାଯୋଗ କରନ୍ତୁ
+            </a>
+          </aside>
+
         </div>
       </div>
     </section>
@@ -102,9 +164,14 @@
     <div class="container footer-inner">
       <div>
         <strong>Kabyamanjari</strong>
-        <div class="footer-note" data-i18n="footerText">© 2026 Kabyamanjari. Crafted for readers who love literature.</div>
+        <div class="footer-note" data-i18n="footerText">
+          © 2026 କାବ୍ୟମଞ୍ଜରୀ। ସାହିତ୍ୟପ୍ରେମୀ ପାଠକଙ୍କ ପାଇଁ ସ୍ନେହରେ ଗଢ଼ା।
+        </div>
       </div>
-      <div class="footer-note">Blue literary theme • Responsive design</div>
+
+      <div class="footer-note">
+        Blue literary theme • Responsive design
+      </div>
     </div>
   </footer>
 
