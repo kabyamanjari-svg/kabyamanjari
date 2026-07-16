@@ -1,65 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="or">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</title>
+
+  <title>Welcome | Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</title>
+  <meta name="description" content="କାବ୍ୟମଞ୍ଜରୀରେ ଆପଣଙ୍କୁ ସ୍ୱାଗତ — ଓଡ଼ିଆ କବିତା, ଗଳ୍ପ ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରା ପାଇଁ ଏକ ସୁନ୍ଦର ମଞ୍ଚ।">
+
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container navbar">
-      <div class="brand">
-        <img src="logo.png" alt="Kabyamanjari logo" class="brand-logo">
+      <a class="brand" href="index.html" aria-label="Kabyamanjari home">
+        <img src="logo.png">
+
         <div class="brand-text">
-          <h1 data-i18n="brandTitle">Kabyamanjari | କାବ୍ୟମଞ୍ଜରୀ</h1>
-          <p data-i18n="brandTag">A home for poetry, stories, and literary reflections</p>
+          <h1 class="site-title-en">Kabyamanjari</h1>
+          <div class="site-title-od">କାବ୍ୟମଞ୍ଜରୀ</div>
+          <p data-i18n="brandTag">
+            କବିତା, ଗଳ୍ପ ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରାର ଏକ ସୁନ୍ଦର ଆସର
+          </p>
         </div>
-      </div>
-      <nav class="nav-links">
-        <a href="index.html" class="" data-i18n="navHome">navHome</a>
-        <a href="welcome.html" class="active" data-i18n="navWelcome">navWelcome</a>
-        <a href="about.html" class="" data-i18n="navAbout">navAbout</a>
-        <a href="poem.html" class="" data-i18n="navPoem">navPoem</a>
-        <a href="contact.html" class="" data-i18n="navContact">navContact</a>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" data-i18n="navHome">ମୂଳପୃଷ୍ଠା</a>
+        <a href="welcome.html" class="active" data-i18n="navWelcome">ସ୍ୱାଗତ</a>
+        <a href="about.html" data-i18n="navAbout">ପରିଚୟ</a>
+        <a href="poem.html" data-i18n="navPoem">ନବୀନତମ କବିତା</a>
+        <a href="contact.html" data-i18n="navContact">ଯୋଗାଯୋଗ</a>
       </nav>
-      <div class="lang-switch">
-        <button class="lang-btn" data-lang="en" data-i18n="btnEnglish">English</button>
-        <button class="lang-btn" data-lang="od" data-i18n="btnOdia">ଓଡ଼ିଆ</button>
+
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn" type="button" data-lang="en" data-i18n="btnEnglish">English</button>
+        <button class="lang-btn active" type="button" data-lang="od" data-i18n="btnOdia">ଓଡ଼ିଆ</button>
       </div>
     </div>
   </header>
 
-  <section class="page-banner">
-    <div class="container">
-      <h2 data-i18n="welcomeBanner"></h2>
-      <p data-i18n="welcomeLead"></p>
-    </div>
-  </section>
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">ମୂଳପୃଷ୍ଠା</a>
+          <span>›</span>
+          <span>ସ୍ୱାଗତ</span>
+        </div>
 
-  
-<section>
-  <div class="container content-layout">
-    <article class="rich-card">
-      <h3 data-i18n="welcomeHeading">A warm welcome</h3>
-      <p data-i18n="welcomeBody1"></p>
-      <p data-i18n="welcomeBody2"></p>
-    </article>
-    <aside class="rich-card">
-      <h3 data-i18n="sideTitle">Reading tip</h3>
-      <p data-i18n="sideText"></p>
-    </aside>
-  </div>
-</section>
+        <span class="section-kicker">Welcome</span>
+        <h2 data-i18n="welcomeTitle">କାବ୍ୟମଞ୍ଜରୀରେ ସ୍ୱାଗତ</h2>
+        <p data-i18n="welcomeSubtitle">
+          ଶବ୍ଦ, ଅନୁଭୂତି ଓ ସାହିତ୍ୟିକ ଚିନ୍ତାକୁ ନେଇ ଗଢ଼ା ଏକ ଶାନ୍ତ ପାଠନ ମଞ୍ଚ।
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content-layout">
+          <article class="rich-card">
+            <h3 data-i18n="welcomeMainHeading">ଆପଣଙ୍କ ପାଇଁ ଏକ ସାହିତ୍ୟିକ ଆସର</h3>
+
+            <p data-i18n="welcomePara1">
+              କାବ୍ୟମଞ୍ଜରୀ ଏକ ସରଳ, ସୁନ୍ଦର ଓ ସାହିତ୍ୟପ୍ରେମୀ ପାଠକମାନଙ୍କ ପାଇଁ ଗଢ଼ା ଡିଜିଟାଲ୍ ମଞ୍ଚ।
+              ଏଠାରେ କବିତା, ଗଳ୍ପ, ଅନୁଭୂତି ଓ ଚିନ୍ତାଧାରାକୁ ଶାନ୍ତ ପରିବେଶରେ ପଢ଼ିବାର ଅନୁଭବ ମିଳିବ।
+            </p>
+
+            <p data-i18n="welcomePara2">
+              ଏହି ମଞ୍ଚର ଲକ୍ଷ୍ୟ ହେଉଛି ଓଡ଼ିଆ ସାହିତ୍ୟର ସୁଗନ୍ଧକୁ ଡିଜିଟାଲ୍ ଜଗତରେ ସହଜ ଓ ଆକର୍ଷଣୀୟ ଭାବରେ ପହଞ୍ଚାଇବା।
+            </p>
+
+            <div class="page-actions">
+              <a class="btn btn-secondary" href="poem.html" data-i18n="readLatestPoem">ନବୀନତମ କବିତା ପଢନ୍ତୁ</a>
+              <a class="text-btn" href="about.html" data-i18n="knowAbout">କାବ୍ୟମଞ୍ଜରୀ ବିଷୟରେ ଜାଣନ୍ତୁ →</a>
+            </div>
+          </article>
+
+          <aside class="rich-card highlight-card">
+            <h3 data-i18n="welcomeSideHeading">ଏଠାରେ କ’ଣ ପାଇବେ?</h3>
+
+            <ul class="list">
+              <li data-i18n="welcomePoint1">ସୁନ୍ଦର ଓଡ଼ିଆ କବିତା</li>
+              <li data-i18n="welcomePoint2">ଗଳ୍ପ ଓ ଅନୁଭୂତିମୂଳକ ଲେଖା</li>
+              <li data-i18n="welcomePoint3">ସାହିତ୍ୟିକ ଚିନ୍ତାଧାରା</li>
+              <li data-i18n="welcomePoint4">ଶାନ୍ତ ଓ ପାଠକ-ବନ୍ଧବ ଡିଜାଇନ୍</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact-section">
+      <div class="container">
+        <div class="grid feature-grid">
+          <article class="card">
+            <div class="card-icon">କ</div>
+            <h4>କବିତା</h4>
+            <p>ମନର ଭାବନାକୁ ଶବ୍ଦରେ ଅନୁଭବ କରିବା ପାଇଁ।</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">ଗ</div>
+            <h4>ଗଳ୍ପ</h4>
+            <p>ଜୀବନ, ସ୍ମୃତି ଓ କଳ୍ପନାର ସୁନ୍ଦର ଉପସ୍ଥାପନା।</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">ଚ</div>
+            <h4>ଚିନ୍ତାଧାରା</h4>
+            <p>ସାହିତ୍ୟ ଓ ମନନ ସହିତ ଜଡ଼ିତ ଭାବନା।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
         <strong>Kabyamanjari</strong>
-        <div class="footer-note" data-i18n="footerText">© 2026 Kabyamanjari. Crafted for readers who love literature.</div>
+        <div class="footer-note" data-i18n="footerText">
+          © 2026 କାବ୍ୟମଞ୍ଜରୀ। ସାହିତ୍ୟପ୍ରେମୀ ପାଠକଙ୍କ ପାଇଁ ସ୍ନେହରେ ଗଢ଼ା।
+        </div>
       </div>
-      <div class="footer-note">Blue literary theme • Responsive design</div>
+
+      <div class="footer-note">
+        Blue literary theme • Responsive design
+      </div>
     </div>
   </footer>
 
