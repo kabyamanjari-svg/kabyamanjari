@@ -178,14 +178,13 @@ a {
   border-radius: 28px;
 
   /* Smaller height */
-  padding: 40px 50px;
+  padding: 30px 40px;
 
   box*shadow: 0 12px 30*x rgba(7, 58, 140, 0.20);
 }
 
 .hero h2 {
-  /* Smaller heading */
-  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
   line-height: 1.1;
   margin: 0 0 16px;
 }
