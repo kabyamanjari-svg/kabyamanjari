@@ -161,44 +161,44 @@ a {
 ========================= */
 
 .hero {
-  padding: 30px 0;
-}
-
+  padding: 20px 0;
+}*
 .hero-box {
   display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
-  gap: 40px;
-  align-items: center;
+  gr*d-template-columns: 1.35fr 0.65fr;*  gap: 30px;
+  align-items: center*
 
   background: linear-gradient(
-    135deg,
+ *  135deg,
     #0b4dbb 0%,
-    #073a8c 100%
+    #073*8c 100%
   );
 
   color: var(--white);
-  border-radius: 32px;
+  border-radius: 28px;
 
-  padding: clamp(32px, 5vw, 70px);
+  /* Smaller height */
+  padding: 40px 50px;
 
-  box-shadow: 0 18px 45px rgba(7, 58, 140, 0.24);
+  box*shadow: 0 12px 30*x rgba(7, 58, 140, 0.20);
 }
 
 .hero h2 {
-  font-size: clamp(3rem, 5vw, 4.8rem);
-  line-height: 1.08;
-  margin: 0 0 20px;
+  /* Smaller heading */
+  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
+  line-height: 1.1;
+  margin: 0 0 16px;
 }
 
 .hero p {
-  margin: 0 0 24px;
-  font-size: 1.15rem;
+  margin: 0 0 20px;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.92);
 }
 
 .hero-actions {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -207,11 +207,10 @@ a {
   align-items: center;
   justify-content: center;
 
-  padding: 14px 24px;
+  padding: 12px 22px;
 
   border-radius: 999px;
   font-weight: bold;
-
   transition: 0.2s ease;
 }
 
@@ -225,30 +224,32 @@ a {
 }
 
 .btn-outline {
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255,255,255,0.35);
   color: var(--white);
 }
 
 .hero-card {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 20px;
 
-  border-radius: 22px;
-  padding: 28px;
+  /* Smaller quote box */
+  padding: 20px;
+
+  max-width: 420px;
+  margin-left: auto;
 }
 
 .hero-card .quote {
-  font-size: 1.5rem;
-  font-style: italic;
+  font-size: 1.2rem;
   line-height: 1.5;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 }
 
 .hero-card .meta {
-  color: rgba(255, 255, 255, 0.84);
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.84);
 }
-
 /* =========================
    SECTIONS
 ========================= */
