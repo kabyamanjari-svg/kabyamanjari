@@ -162,25 +162,26 @@ a {
 
 .hero {
   padding: 20px 0;
-}*
+}
+
 .hero-box {
   display: grid;
-  gr*d-template-columns: 1.35fr 0.65fr;*  gap: 30px;
-  align-items: center*
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 30px;
+  align-items: center;
 
   background: linear-gradient(
- *  135deg,
+    135deg,
     #0b4dbb 0%,
-    #073*8c 100%
+    #073a8c 100%
   );
 
   color: var(--white);
   border-radius: 28px;
 
-  /* Smaller height */
   padding: 30px 40px;
 
-  box*shadow: 0 12px 30*x rgba(7, 58, 140, 0.20);
+  box-shadow: 0 12px 30px rgba(7, 58, 140, 0.20);
 }
 
 .hero h2 {
@@ -205,9 +206,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 12px 22px;
-
   border-radius: 999px;
   font-weight: bold;
   transition: 0.2s ease;
@@ -231,10 +230,7 @@ a {
   background: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.18);
   border-radius: 20px;
-
-  /* Smaller quote box */
   padding: 20px;
-
   max-width: 420px;
   margin-left: auto;
 }
@@ -448,3 +444,22 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-links,
+  .lang-switch {
+    justify-content: center;
+  }
+
+  .hero-card {
+    max-width: 100%;
+  }
+}
